@@ -15,7 +15,7 @@
   width: 500px;
 }
 
-.input-div input{
+.input-div input, select{
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -58,4 +58,18 @@ button{
 
 .error{
   color: red;
+}
+
+.check-box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.check-box input{
+  width: auto;
+}
+
+.link{
+  color: white;
 }

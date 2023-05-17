@@ -23,3 +23,18 @@ export const basicSchema = yup.object().shape({
     .oneOf([yup.ref("password")], "Passwords do not match")
     .required("You need to enter your confirm password"),
 });
+
+
+export const advencedSchema = yup.object().shape({
+  username: yup
+    .string()
+    .min(3,"Your username must be at least 5 characters")
+    .required("You need to enter your username"),
+
+    university: yup.string().oneOf(["KDG","UCLL"],"please select your university").required("You need to select your university"),
+
+    isAccepted : yup
+    .boolean().oneOf([true],"please accept the terms of use"),
+
+
+});
